@@ -1,0 +1,10 @@
+# Jupyter automatic checkpoint files
+.ipynb_checkpoints/
+
+# Development backup notebooks
+*_backup.ipynb
+*_old.ipynb
+
+# Python cache files
+__pycache__/
+*.pyc

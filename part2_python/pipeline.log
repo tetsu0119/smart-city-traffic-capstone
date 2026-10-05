@@ -1,0 +1,16 @@
+2026-10-06 06:00:46,188 - INFO - __main__ - Traffic data pipeline started.
+2026-10-06 06:00:46,253 - INFO - __main__ - Raw CSV loaded successfully: 48204 rows, 9 columns.
+2026-10-06 06:00:46,253 - INFO - __main__ - Schema validation successful. All 9 expected columns are present.
+2026-10-06 06:00:46,268 - INFO - __main__ - Categorical column 'holiday' required no standardisation changes.
+2026-10-06 06:00:46,281 - INFO - __main__ - Categorical column 'weather_main' required no standardisation changes.
+2026-10-06 06:00:46,294 - INFO - __main__ - Categorical column 'weather_description' required no standardisation changes.
+2026-10-06 06:00:46,322 - INFO - __main__ - Date/time validation successful for 'date_time'; no invalid values detected.
+2026-10-06 06:00:46,367 - WARNING - __main__ - 17 duplicate rows detected and removed.
+2026-10-06 06:00:46,377 - DEBUG - __main__ - Month 1 valid temperature median used for imputation: 266.83 K.
+2026-10-06 06:00:46,381 - DEBUG - __main__ - Month 2 valid temperature median used for imputation: 266.51 K.
+2026-10-06 06:00:46,382 - WARNING - __main__ - 10 zero-Kelvin temperature records imputed using monthly median temperatures.
+2026-10-06 06:00:46,387 - DEBUG - __main__ - Valid rainfall median used for imputation: 0.00 mm.
+2026-10-06 06:00:46,387 - WARNING - __main__ - 1 rainfall record(s) above 9000 mm imputed using the valid rainfall median.
+2026-10-06 06:00:46,407 - INFO - __main__ - Final validation successful: 48187 rows, 9 columns; no duplicates, zero-Kelvin temperatures, extreme rainfall values, or invalid date/time values remain.
+2026-10-06 06:00:46,609 - INFO - __main__ - Cleaned dataset saved successfully to 'cleaned_traffic_data.csv': 48187 rows, 9 columns.
+2026-10-06 06:00:46,609 - INFO - __main__ - Traffic data pipeline completed successfully.
