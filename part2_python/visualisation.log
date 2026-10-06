@@ -1,0 +1,14 @@
+2026-10-06 09:43:46,228 - INFO - __main__ - Visualisation workflow started.
+2026-10-06 09:43:46,432 - INFO - __main__ - Engineered dataset loaded successfully: 48187 rows, 30 columns.
+2026-10-06 09:43:46,433 - INFO - __main__ - Figures will be saved to 'figures'.
+2026-10-06 09:43:47,639 - INFO - __main__ - Figure saved successfully to 'figures\traffic_by_hour.png'.
+2026-10-06 09:43:48,176 - INFO - __main__ - Figure saved successfully to 'figures\weekday_vs_weekend.png'.
+2026-10-06 09:43:48,195 - DEBUG - __main__ - Weather condition summary: {'Clouds': {'mean': 3617.989114658926, 'count': 15158}, 'Haze': {'mean': 3502.1014705882353, 'count': 1360}, 'Rain': {'mean': 3317.9055007052184, 'count': 5672}, 'Drizzle': {'mean': 3292.1895604395604, 'count': 1820}, 'Smoke': {'mean': 3237.65, 'count': 20}, 'Clear': {'mean': 3055.614465032875, 'count': 13384}, 'Snow': {'mean': 3016.321391304348, 'count': 2875}, 'Thunderstorm': {'mean': 2999.4317521781218, 'count': 1033}, 'Mist': {'mean': 2933.343923348462, 'count': 5949}, 'Fog': {'mean': 2703.720394736842, 'count': 912}, 'Squall': {'mean': 2061.75, 'count': 4}}
+2026-10-06 09:43:48,605 - INFO - __main__ - Figure saved successfully to 'figures\traffic_by_weather.png'.
+2026-10-06 09:43:50,469 - INFO - __main__ - Figure saved successfully to 'figures\temperature_vs_traffic.png'.
+2026-10-06 09:43:50,470 - INFO - __main__ - Validated saved figure: 'figures\traffic_by_hour.png'.
+2026-10-06 09:43:50,470 - INFO - __main__ - Validated saved figure: 'figures\weekday_vs_weekend.png'.
+2026-10-06 09:43:50,470 - INFO - __main__ - Validated saved figure: 'figures\traffic_by_weather.png'.
+2026-10-06 09:43:50,470 - INFO - __main__ - Validated saved figure: 'figures\temperature_vs_traffic.png'.
+2026-10-06 09:43:50,471 - INFO - __main__ - Figure validation successful. All 4 expected figures were saved.
+2026-10-06 09:43:50,471 - INFO - __main__ - Visualisation workflow completed successfully.
