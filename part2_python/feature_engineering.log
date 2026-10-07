@@ -1,14 +1,14 @@
-2026-10-06 08:02:37,882 - INFO - __main__ - Feature engineering pipeline started.
-2026-10-06 08:02:37,993 - INFO - __main__ - Cleaned dataset loaded successfully: 48187 rows, 9 columns.
-2026-10-06 08:02:37,993 - INFO - __main__ - Dataset shape before feature engineering: 48187 rows, 9 columns.
-2026-10-06 08:02:38,011 - INFO - __main__ - Created time features: hour, day_of_week, is_weekend, hour_sin, and hour_cos.
-2026-10-06 08:02:38,045 - INFO - __main__ - Created weather features: has_rain, has_snow, and 11 one-hot encoded weather_main columns.
-2026-10-06 08:02:38,059 - DEBUG - __main__ - temp scaling range: min=243.39, max=310.07.
-2026-10-06 08:02:38,061 - DEBUG - __main__ - clouds_all scaling range: min=0.00, max=100.00.
-2026-10-06 08:02:38,062 - INFO - __main__ - Created Min-Max scaled features for: temp, clouds_all.
-2026-10-06 08:02:38,079 - DEBUG - __main__ - Congestion thresholds calculated: Q1=1192.50, Q3=4933.00.
-2026-10-06 08:02:38,086 - INFO - __main__ - Created congestion_category using traffic-volume quartiles.
-2026-10-06 08:02:38,098 - INFO - __main__ - Feature validation successful. All 10 required features are present with no missing values.
-2026-10-06 08:02:38,099 - INFO - __main__ - Dataset shape after feature engineering: 48187 rows, 30 columns.
-2026-10-06 08:02:38,620 - INFO - __main__ - Engineered dataset saved successfully to 'engineered_traffic_data.csv': 48187 rows, 30 columns.
-2026-10-06 08:02:38,620 - INFO - __main__ - Feature engineering pipeline completed successfully.
+2026-10-06 14:56:05,486 - INFO - __main__ - Feature engineering pipeline started.
+2026-10-06 14:56:05,622 - INFO - __main__ - Cleaned dataset loaded successfully: 48187 rows, 9 columns.
+2026-10-06 14:56:05,622 - INFO - __main__ - Dataset shape before feature engineering: 48187 rows, 9 columns.
+2026-10-06 14:56:05,644 - INFO - __main__ - Created time features: hour, day_of_week, is_weekend, hour_sin, and hour_cos.
+2026-10-06 14:56:05,680 - INFO - __main__ - Created weather features: has_rain, has_snow, and 11 one-hot encoded weather_main columns.
+2026-10-06 14:56:05,696 - DEBUG - __main__ - temp scaling range: min=243.39, max=310.07.
+2026-10-06 14:56:05,698 - DEBUG - __main__ - clouds_all scaling range: min=0.00, max=100.00.
+2026-10-06 14:56:05,699 - INFO - __main__ - Created Min-Max scaled features for: temp, clouds_all.
+2026-10-06 14:56:05,714 - DEBUG - __main__ - Congestion thresholds calculated: Q1=1192.50, Q3=4933.00.
+2026-10-06 14:56:05,721 - INFO - __main__ - Created congestion_category using traffic-volume quartiles.
+2026-10-06 14:56:05,736 - INFO - __main__ - Feature validation successful. All 10 required features are present with no missing values.
+2026-10-06 14:56:05,737 - INFO - __main__ - Dataset shape after feature engineering: 48187 rows, 30 columns.
+2026-10-06 14:56:06,302 - INFO - __main__ - Engineered dataset saved successfully to 'engineered_traffic_data.csv': 48187 rows, 30 columns.
+2026-10-06 14:56:06,302 - INFO - __main__ - Feature engineering pipeline completed successfully.
