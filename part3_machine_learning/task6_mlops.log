@@ -1,0 +1,67 @@
+2026-10-08 01:39:32,265 - INFO - task6_mlops - Task 4 MLflow tracking database found: C:\Users\tanak\Documents\GitHub\smart-city-traffic-capstone\part3_machine_learning\mlflow_tracking.db
+2026-10-08 01:39:34,216 - INFO - task6_mlops - MLflow tracking URI configured: sqlite:///C:/Users/tanak/Documents/GitHub/smart-city-traffic-capstone/part3_machine_learning/mlflow_tracking.db
+2026-10-08 01:39:34,227 - INFO - task6_mlops - MLflow experiments found: 2
+2026-10-08 01:39:34,264 - INFO - task6_mlops - MLflow runs retrieved successfully: 3
+2026-10-08 01:39:36,998 - INFO - task6_mlops - Completed MLflow runs selected: 2
+2026-10-08 01:39:37,000 - INFO - task6_mlops - Metric columns available: ['metrics.R_squared', 'metrics.MAE']
+2026-10-08 01:39:37,018 - INFO - task6_mlops - Model-version summary created successfully.
+2026-10-08 01:39:41,688 - INFO - task6_mlops - Random Forest deployment run selected: 9b06e1bd74c74c6fb7197c2c7c8ec520
+2026-10-08 01:39:41,715 - INFO - task6_mlops - Top-level MLflow artifacts: []
+2026-10-08 01:39:45,975 - INFO - task6_mlops - Random Forest parameters retrieved from MLflow: {'algorithm': 'RandomForestRegressor', 'n_estimators': '100', 'random_state': '42', 'test_size': '0.2', 'number_of_features': '25', 'feature_scaling': 'False'}
+2026-10-08 01:39:45,976 - INFO - task6_mlops - Random Forest metrics retrieved from MLflow: {'MAE': 271.3003618291683, 'R_squared': 0.9441755102169268}
+2026-10-08 01:39:50,715 - INFO - task6_mlops - Engineered dataset loaded for deployment: 48187 rows, 30 columns.
+2026-10-08 01:39:50,716 - INFO - task6_mlops - Available engineered columns: ['holiday', 'temp', 'rain_1h', 'snow_1h', 'clouds_all', 'weather_main', 'weather_description', 'date_time', 'traffic_volume', 'hour', 'day_of_week', 'is_weekend', 'hour_sin', 'hour_cos', 'has_rain', 'has_snow', 'weather_Clear', 'weather_Clouds', 'weather_Drizzle', 'weather_Fog', 'weather_Haze', 'weather_Mist', 'weather_Rain', 'weather_Smoke', 'weather_Snow', 'weather_Squall', 'weather_Thunderstorm', 'temp_scaled', 'clouds_all_scaled', 'congestion_category']
+2026-10-08 01:39:57,705 - INFO - task6_mlops - Numeric holiday flag created: is_holiday.
+2026-10-08 01:39:57,709 - INFO - task6_mlops - Deployment feature count: 25
+2026-10-08 01:39:57,746 - INFO - task6_mlops - Deployment feature structure validated: 25 numeric features.
+2026-10-08 01:39:57,779 - INFO - task6_mlops - Deployment split created: train=38549, test=9638.
+2026-10-08 01:40:27,178 - INFO - task6_mlops - Deployment Random Forest trained successfully.
+2026-10-08 01:40:27,869 - INFO - task6_mlops - Reproduced Random Forest performance: MAE=270.0103, R2=0.9448
+2026-10-08 01:40:27,872 - ERROR - task6_mlops - Deployment model does not reproduce Task 4 metrics. Task 4 MAE=271.3004, reproduced MAE=270.0103; Task 4 R2=0.9442, reproduced R2=0.9448.
+2026-10-08 01:45:40,751 - INFO - task6_mlops - Task 4 baseline comparison: MAE difference=-1.2900 (0.48%), R2 difference=0.0006.
+2026-10-08 01:45:40,757 - INFO - task6_mlops - PASS - Reconstructed deployment model performance is consistent with the Task 4 baseline.
+2026-10-08 01:45:40,760 - INFO - task6_mlops - Deployment specification confirmed: {'algorithm': 'RandomForestRegressor', 'n_estimators': 100, 'random_state': 42, 'test_size': 0.2, 'number_of_features': 25, 'feature_scaling': False, 'task4_baseline_MAE': 271.3004, 'task4_baseline_R2': 0.9442, 'deployment_MAE': 270.0103, 'deployment_R2': 0.9448, 'MAE_difference_pct': 0.48}
+2026-10-08 01:47:50,320 - INFO - task6_mlops - Deployment MLflow experiment selected: Traffic_Volume_Deployment_Simulation
+2026-10-08 01:52:55,652 - INFO - task6_mlops - Deployment MLflow experiment selected: Traffic_Volume_Deployment_Simulation
+2026-10-08 01:53:58,539 - INFO - task6_mlops - Deployment-ready MLflow run completed: b22a5744718247a0a6d5c2ebda28efa7
+2026-10-08 01:53:58,541 - INFO - task6_mlops - Random Forest deployment artifact logged successfully.
+2026-10-08 01:55:54,236 - INFO - task6_mlops - Loading deployment model from MLflow: runs:/b22a5744718247a0a6d5c2ebda28efa7/random_forest_model
+2026-10-08 01:57:37,853 - INFO - task6_mlops - Loading deployment model from MLflow: runs:/b22a5744718247a0a6d5c2ebda28efa7/random_forest_model
+2026-10-08 01:57:40,838 - INFO - task6_mlops - Deployment model loaded successfully from MLflow.
+2026-10-08 01:57:40,962 - INFO - task6_mlops - Deployment inference test completed: predicted=4659.6, actual=4924.0
+2026-10-08 01:57:40,964 - INFO - task6_mlops - PASS - MLflow deployment artifact can be loaded and used for inference.
+2026-10-08 02:00:32,408 - INFO - task6_mlops - FastAPI /predict endpoint configured successfully.
+2026-10-08 02:02:31,954 - INFO - task6_mlops - Prediction API request received.
+2026-10-08 02:02:32,057 - INFO - task6_mlops - Prediction API response generated: 4659.6
+2026-10-08 02:02:32,068 - INFO - task6_mlops - FastAPI endpoint test completed successfully.
+2026-10-08 02:02:32,070 - INFO - task6_mlops - API response: {'model_version': 'v2', 'model': 'RandomForestRegressor', 'predicted_traffic_volume': 4659.6}
+2026-10-08 02:02:32,073 - INFO - task6_mlops - PASS - FastAPI /predict endpoint accepts input and returns a valid traffic-volume prediction.
+2026-10-08 02:07:10,855 - INFO - task6_mlops - Monitoring baseline configured: MAE=271.3004, alert threshold=406.9505.
+2026-10-08 02:07:10,860 - INFO - task6_mlops - Monitoring result: MAE=320.0000, ratio=1.18, status=PASS.
+2026-10-08 02:07:10,862 - INFO - task6_mlops - Monitoring result: MAE=450.0000, ratio=1.66, status=ALERT.
+2026-10-08 02:10:45,159 - INFO - task6_mlops - Operational monitoring alert generated: PASS / Normal - Monitored MAE: 320.0; Alert threshold: 407.0.
+2026-10-08 02:10:45,162 - INFO - task6_mlops - Operational monitoring alert generated: ALERT / Requires investigation - Monitored MAE: 450.0; Alert threshold: 407.0.
+2026-10-08 02:13:11,775 - INFO - task6_mlops - Numeric holiday flag created: is_holiday.
+2026-10-08 02:13:11,778 - INFO - task6_mlops - Deployment feature count: 25
+2026-10-08 02:13:11,993 - INFO - task6_mlops - Deployment feature structure validated: 25 numeric features.
+2026-10-08 02:13:12,061 - INFO - task6_mlops - Deployment split created: train=38549, test=9638.
+2026-10-08 02:13:42,578 - INFO - task6_mlops - Deployment Random Forest trained successfully.
+2026-10-08 02:13:43,138 - INFO - task6_mlops - Reconstructed Random Forest performance: MAE=270.0103, R2=0.9448
+2026-10-08 02:13:43,140 - INFO - task6_mlops - Task 4 baseline retained for comparison: MAE=271.3004, R2=0.9442
+2026-10-08 02:13:43,142 - INFO - task6_mlops - 6.3.4 model reconstruction completed successfully.
+2026-10-08 02:14:36,113 - INFO - task6_mlops - Task 4 baseline comparison: MAE difference=-1.2900 (0.48%), R2 difference=0.0006.
+2026-10-08 02:14:36,121 - INFO - task6_mlops - PASS - Reconstructed deployment model performance is consistent with the Task 4 baseline.
+2026-10-08 02:14:36,123 - INFO - task6_mlops - Deployment specification confirmed: {'algorithm': 'RandomForestRegressor', 'n_estimators': 100, 'random_state': 42, 'test_size': 0.2, 'number_of_features': 25, 'feature_scaling': False, 'task4_baseline_MAE': 271.3004, 'task4_baseline_R2': 0.9442, 'deployment_MAE': 270.0103, 'deployment_R2': 0.9448, 'MAE_difference_pct': 0.48}
+2026-10-08 02:17:07,384 - INFO - task6_mlops - Task 6 final validation started.
+2026-10-08 02:17:07,388 - INFO - task6_mlops - PASS - Model versions documented
+2026-10-08 02:17:07,390 - INFO - task6_mlops - PASS - Random Forest v2 selected
+2026-10-08 02:17:07,393 - INFO - task6_mlops - PASS - Deployment model consistent with Task 4 baseline
+2026-10-08 02:17:07,394 - INFO - task6_mlops - PASS - MLflow deployment run completed
+2026-10-08 02:17:07,396 - INFO - task6_mlops - PASS - MLflow model artifact reload verified
+2026-10-08 02:17:07,397 - INFO - task6_mlops - PASS - FastAPI predict endpoint configured
+2026-10-08 02:17:07,400 - INFO - task6_mlops - PASS - FastAPI prediction returned successfully
+2026-10-08 02:17:07,404 - INFO - task6_mlops - PASS - Prediction-error monitoring configured
+2026-10-08 02:17:07,405 - INFO - task6_mlops - PASS - PASS monitoring state demonstrated
+2026-10-08 02:17:07,407 - INFO - task6_mlops - PASS - ALERT monitoring state demonstrated
+2026-10-08 02:17:07,409 - INFO - task6_mlops - PASS - Operational alert messages generated
+2026-10-08 02:17:07,411 - INFO - task6_mlops - TASK 6 STATUS: PASS - All required checks completed.

@@ -1,0 +1,25 @@
+2026-10-07 20:07:22,745 - INFO - __main__ - Task 1 supervised machine learning workflow started.
+2026-10-07 20:07:23,173 - INFO - __main__ - Engineered traffic dataset loaded successfully: 48187 rows, 30 columns.
+2026-10-07 20:07:33,106 - INFO - __main__ - Required Part 2 engineered features validated successfully.
+2026-10-07 20:07:33,166 - INFO - __main__ - Part 3 features created: is_holiday, day_sin, day_cos, is_low_visibility.
+2026-10-07 20:07:35,491 - INFO - __main__ - Part 2 and Part 3 congestion-category agreement: 50.01%.
+2026-10-07 20:07:35,493 - WARNING - __main__ - Part 2 congestion_category differs from the Part 3 quartile definition for 24091 records.
+2026-10-07 20:07:35,498 - INFO - __main__ - congestion_category rebuilt using Part 3 quartiles: Q1=1192.50, Q2=3379.00, Q3=4933.00.
+2026-10-07 20:07:35,511 - INFO - __main__ - Proxy high_risk target rebuilt successfully using the Part 3 quartile congestion category.
+2026-10-07 20:11:48,253 - INFO - __main__ - Common ML feature set prepared with 26 features.
+2026-10-07 20:11:52,533 - INFO - __main__ - Classification data prepared: 38549 training rows, 9638 test rows.
+2026-10-07 20:11:56,414 - INFO - __main__ - Logistic Regression classification model trained successfully.
+2026-10-07 20:11:59,431 - INFO - __main__ - Random Forest classification model trained successfully.
+2026-10-07 20:12:06,822 - INFO - __main__ - Logistic Regression classification model trained successfully.
+2026-10-07 20:12:09,640 - INFO - __main__ - Random Forest classification model trained successfully.
+2026-10-07 20:12:10,905 - INFO - __main__ - Classification models evaluated successfully.
+2026-10-07 20:18:30,887 - INFO - __main__ - Regression data prepared: 38549 training rows, 9638 test rows.
+2026-10-07 20:18:34,882 - INFO - __main__ - Linear Regression model trained successfully.
+2026-10-07 20:18:41,125 - INFO - __main__ - Random Forest Regression model trained successfully.
+2026-10-07 20:27:56,080 - INFO - __main__ - Regression data prepared: 38549 training rows, 9638 test rows.
+2026-10-07 20:28:03,603 - INFO - __main__ - Random Forest Regression model trained successfully.
+2026-10-07 20:36:05,171 - INFO - __main__ - Regression data prepared: 38549 training rows, 9638 test rows.
+2026-10-07 20:36:14,974 - INFO - __main__ - Linear Regression model trained successfully.
+2026-10-07 20:36:41,201 - INFO - __main__ - Random Forest Regression model trained successfully.
+2026-10-07 20:39:26,831 - INFO - __main__ - Regression models evaluated successfully.
+2026-10-07 20:43:05,106 - INFO - __main__ - Task 1 final validation completed.

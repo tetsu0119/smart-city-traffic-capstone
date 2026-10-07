@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/tanak/Documents/GitHub/smart-city-traffic-capstone/part3_machine_learning/mlruns/1/models/m-69915939560c49429b542533cd7d1edd/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+mlflow_version: 3.16.1
+model_id: m-69915939560c49429b542533cd7d1edd
+model_size_bytes: 326553593
+model_uuid: m-69915939560c49429b542533cd7d1edd
+prompts: null
+run_id: 9b06e1bd74c74c6fb7197c2c7c8ec520
+utc_time_created: '2026-10-07 14:26:39.885956'

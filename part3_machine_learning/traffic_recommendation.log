@@ -1,0 +1,34 @@
+2026-10-08 00:19:56,707 - INFO - traffic_recommendation - Traffic recommendation system initialised successfully.
+2026-10-08 00:20:10,028 - INFO - traffic_recommendation - Recommendation requested: day_type=Weekday, window=6-22, weather=None
+2026-10-08 00:20:10,131 - INFO - traffic_recommendation - Recommendation generated: Weekday 22:00-23:00, volume=2125.9, reduction=39.8%, observations=1427
+2026-10-08 00:20:10,137 - INFO - traffic_recommendation - Recommendation requested: day_type=Weekend, window=6-22, weather=None
+2026-10-08 00:20:10,172 - INFO - traffic_recommendation - Recommendation generated: Weekend 06:00-07:00, volume=1089.1, reduction=57.6%, observations=598
+2026-10-08 00:20:10,176 - INFO - traffic_recommendation - Recommendation requested: day_type=Weekday, window=6-22, weather=Rain
+2026-10-08 00:20:10,250 - INFO - traffic_recommendation - Weather filter accepted: Rain
+2026-10-08 00:20:10,263 - INFO - traffic_recommendation - Recommendation generated: Weekday 22:00-23:00, volume=1998.7, reduction=43.4%, observations=174
+2026-10-08 00:27:56,744 - INFO - traffic_recommendation - Recommendation requested: day_type=Weekday, window=6-22, weather=Fog
+2026-10-08 00:27:56,969 - WARNING - traffic_recommendation - Weather-specific recommendation for Fog was unsupported or not below the Weekday baseline. Falling back to day-type data.
+2026-10-08 00:27:56,992 - INFO - traffic_recommendation - Recommendation generated: Weekday 22:00-23:00, volume=2125.9, reduction=39.8%, observations=1427
+2026-10-08 00:27:57,000 - INFO - traffic_recommendation - Recommendation requested: day_type=Holiday, window=6-22, weather=None
+2026-10-08 00:27:57,002 - ERROR - traffic_recommendation - Invalid day type: Holiday
+2026-10-08 00:27:57,004 - INFO - traffic_recommendation - Input validation test passed: day_type must be 'Weekday' or 'Weekend'.
+2026-10-08 00:34:47,873 - INFO - traffic_recommendation - Recommendation requested: day_type=Weekday, window=6-22, weather=Fog
+2026-10-08 00:34:48,115 - WARNING - traffic_recommendation - Weather-specific recommendation for Fog was unsupported or not below the Weekday baseline. Falling back to day-type data.
+2026-10-08 00:34:48,136 - INFO - traffic_recommendation - Recommendation generated: Weekday 22:00-23:00, volume=2125.9, reduction=39.8%, observations=1427
+2026-10-08 00:34:48,143 - INFO - traffic_recommendation - Recommendation requested: day_type=Holiday, window=6-22, weather=None
+2026-10-08 00:34:48,144 - ERROR - traffic_recommendation - Invalid day type: Holiday
+2026-10-08 00:34:48,145 - INFO - traffic_recommendation - Input validation test passed: day_type must be 'Weekday' or 'Weekend'.
+2026-10-08 00:38:53,632 - INFO - traffic_recommendation - Task 5 final validation started.
+2026-10-08 00:38:53,636 - INFO - traffic_recommendation - PASS - Required features available
+2026-10-08 00:38:53,637 - INFO - traffic_recommendation - PASS - Lower-traffic periods identified
+2026-10-08 00:38:53,639 - INFO - traffic_recommendation - PASS - Day types supported
+2026-10-08 00:38:53,640 - INFO - traffic_recommendation - PASS - Practical travel window analysed
+2026-10-08 00:38:53,642 - INFO - traffic_recommendation - PASS - Weather-aware analysis completed
+2026-10-08 00:38:53,643 - INFO - traffic_recommendation - PASS - Weekday recommendation generated
+2026-10-08 00:38:53,644 - INFO - traffic_recommendation - PASS - Weekend recommendation generated
+2026-10-08 00:38:53,646 - INFO - traffic_recommendation - PASS - Rain recommendation generated
+2026-10-08 00:38:53,647 - INFO - traffic_recommendation - PASS - Recommendations below day-type baseline
+2026-10-08 00:38:53,648 - INFO - traffic_recommendation - PASS - Weather recommendation sufficiently supported
+2026-10-08 00:38:53,650 - INFO - traffic_recommendation - PASS - Weather fallback works
+2026-10-08 00:38:53,651 - INFO - traffic_recommendation - PASS - Plain-language recommendations generated
+2026-10-08 00:38:53,653 - INFO - traffic_recommendation - TASK 5 STATUS: PASS - All required checks completed.

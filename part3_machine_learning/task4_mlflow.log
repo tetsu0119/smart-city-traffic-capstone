@@ -1,0 +1,10 @@
+2026-10-07 22:14:03,250 - INFO - __main__ - Task 4 MLflow experiment-tracking workflow started.
+2026-10-07 22:14:34,840 - INFO - __main__ - Dataset loaded successfully: 48187 rows, 30 columns.
+2026-10-07 22:15:22,028 - INFO - __main__ - MLflow experiment data prepared with 25 predictors.
+2026-10-07 22:16:14,049 - INFO - __main__ - MLflow configured: experiment=capstone_traffic_volume_prediction.
+2026-10-07 22:19:33,071 - INFO - __main__ - Linear Regression logged to MLflow: run_id=f3cd1322587143d896b9acd97122d8fb, MAE=813.7666, R2=0.7259.
+2026-10-07 22:26:56,590 - INFO - __main__ - Random Forest logged to MLflow: run_id=9b06e1bd74c74c6fb7197c2c7c8ec520, MAE=271.3004, R2=0.9442.
+2026-10-07 22:29:24,798 - INFO - __main__ - Retrieved 3 MLflow runs for comparison.
+2026-10-07 22:31:09,555 - INFO - __main__ - Retrieved 2 completed MLflow runs for comparison.
+2026-10-07 22:51:49,488 - INFO - __main__ - Task 4 final validation completed.
+2026-10-07 23:05:19,319 - INFO - __main__ - Task 4 final validation completed.
